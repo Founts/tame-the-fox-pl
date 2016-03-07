@@ -1,0 +1,271 @@
+/* 
+ * Podcast Blog Post Player */
+.podcaster-theme .mejs-container .mejs-inner {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.podcaster-theme .mejs-controls .mejs-horizontal-volume-slider {
+  margin: 0 0 0 10px;
+}
+.podcaster-theme .mejs-controls .mejs-time-rail .mejs-time-total {
+  background: rgba(0, 0, 0, 0.5);
+  margin: 5px;
+}
+.podcaster-theme .mejs-container .mejs-controls {
+  background: #17191a !important;
+  height: 50px !important;
+  padding: 15px 35px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.podcaster-theme .mejs-container .mejs-controls div {
+  font-size: 10px;
+}
+.podcaster-theme .mejs-controls .mejs-time-rail .mejs-time-float {
+  background: none;
+  border: 0;
+  color: #17191a;
+  display: none;
+  font-size: 10px;
+  height: 17px;
+  margin-left: -18px;
+  position: absolute;
+  text-align: center;
+  top: -26px;
+  width: 36px;
+}
+.podcaster-theme .mejs-controls .mejs-button button {
+  margin: 17px 15px 17px 0;
+  font-family: 'Batch Icons';
+  color: #ccc;
+  display: block;
+  font-size: 16px;
+}
+.podcaster-theme .mejs-controls .mejs-button button:focus {
+  outline: none;
+}
+.podcaster-theme .mejs-controls .mejs-button button:hover {
+  color: #eee;
+}
+.podcaster-theme .mejs-controls .mejs-button.mejs-volume-button.mejs-mute button,
+.podcaster-theme .mejs-controls .mejs-button.mejs-volume-button.mejs-unmute button,
+.podcaster-theme .mejs-controls .mejs-button.mejs-playpause-button.mejs-play button,
+.podcaster-theme .mejs-controls .mejs-button.mejs-playpause-button.mejs-pause button,
+.podcaster-theme .mejs-controls .mejs-button.mejs-button.mejs-fullscreen-button button,
+.podcaster-theme .mejs-controls .mejs-button.mejs-button.mejs-fullscreen-button.mejs-unfullscreen button {
+  background-image: none;
+}
+.podcaster-theme .mejs-controls .mejs-button.mejs-volume-button.mejs-mute button:before {
+  content: '\f03B';
+}
+.podcaster-theme .mejs-controls .mejs-button.mejs-volume-button.mejs-unmute button:before {
+  content: '\f038';
+}
+.podcaster-theme .mejs-controls .mejs-button.mejs-playpause-button.mejs-play button:before {
+  content: '\f16B';
+}
+.podcaster-theme .mejs-controls .mejs-button.mejs-playpause-button.mejs-pause button:before {
+  content: '\f16C';
+}
+.podcaster-theme .mejs-controls .mejs-button.mejs-button.mejs-fullscreen-button button:before {
+  content: '\f0a2';
+}
+.podcaster-theme .mejs-controls .mejs-button.mejs-button.mejs-fullscreen-button button:before {
+  content: '\f0a2';
+}
+.podcaster-theme .mejs-controls .mejs-button.mejs-button.mejs-fullscreen-button.mejs-unfullscreen button:before {
+  content: '\f0a3';
+}
+.mejs-container .mejs-controls .mejs-time span {
+  color: #ccc !important;
+}
+
+/* General Audio Styling **/
+.podcaster-theme .mejs-controls .mejs-button.mejs-volume-button.mejs-mute button {
+  height: 17px;
+  width: 17px;
+}
+.podcaster-theme .mejs-controls .mejs-button.mejs-volume-button.mejs-unmute button {
+  height: 17px;
+  width: 17px;
+}
+.podcaster-theme .mejs-controls div.mejs-time-rail {
+  padding-top: 15px;
+}
+.podcaster-theme .mejs-container .mejs-controls .mejs-time {
+  padding: 18px 9px;
+}
+.podcaster-theme .mejs-container .mejs-controls .mejs-time span {
+  font-size: 10px;
+}
+.podcaster-theme .mejs-controls .mejs-time-rail .mejs-time-loaded {
+  background: rgba(0, 0, 0, 0.75);
+}
+.podcaster-theme .mejs-controls .mejs-time-rail .mejs-time-current {
+  background: #619C9B;
+}
+.podcaster-theme .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  top: 22px !important;
+  background: #B3CFCF;
+}
+.podcaster-theme .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+  top: 22px !important;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+ /**General Video Settings **/
+
+.podcaster-theme .mejs-container.mejs-video .mejs-mediaelement video {
+  max-width: 100%;
+  height: auto;
+}
+.podcaster-theme .mejs-container.mejs-video .mejs-overlay-button {
+  background-image: none;
+  font-family: 'Batch Icons';
+  font-size: 48px;
+  line-height: 48px;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -o-border-radius: 9999px;
+  border-radius: 9999px;
+}
+.podcaster-theme .mejs-container.mejs-video .mejs-overlay-button:before {
+  display: block;
+  content: '\f16B';
+  color: #eee;
+  padding-top: 30px;
+  text-align: center;
+}
+.podcaster-theme .mejs-container.mejs-video .mejs-controls .mejs-volume-button .mejs-volume-slider {
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.podcaster-theme .mejs-container.mejs-video .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle {
+  height: 10px;
+  left: 7px;
+  margin: 0;
+  top: -3px;
+  width: 10px;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -o-border-radius: 9999px;
+  border-radius: 9999px;
+}
+
+
+
+/* Dark */
+.dark-theme .entries .post.type-podcast .entry-header .podcast_player {
+  background-color:#0f0f0f;
+}
+.dark-theme .single-podcast .podcast-content .podcast_player, 
+.dark-theme .page .podcast_player, 
+.dark-theme .single-post .audio_player {
+  background-color:#0f0f0f;
+}
+.dark-theme .post.format-audio .featured-media .audio_player {
+  background-color:#0f0f0f; 
+}
+.dark-theme.podcaster-theme .mejs-container .mejs-controls {
+  background:#0f0f0f !important;
+}
+
+.dark-theme .entries .post .podcast_player, 
+.dark-theme .entries .post .audio_player, 
+.dark-theme .entries .post .wp-audio-shortcode {
+  background-color:#0f0f0f;
+}
+
+
+
+
+/* Light */
+.light-theme .post .podcast_player, 
+.light-theme .post .audio_player, 
+.light-theme .post .wp-audio-shortcode {
+  background-color:#C2C2C2;
+}
+
+.light-theme .entries .post .podcast_player, 
+.light-theme .entries .post .audio_player, 
+.light-theme .entries .post .wp-audio-shortcode {
+  background-color:#c2c2c2;
+}
+
+.light-theme .post.format-audio .featured-media .audio_player {
+  background-color:#c2c2c2;
+}
+
+.light-theme .single-podcast .podcast-content .podcast_player, 
+.light-theme .page .podcast_player, 
+.light-theme .single-post .audio_player {
+  background-color:#c2c2c2;
+}
+.light-theme.podcaster-theme .mejs-container .mejs-controls {
+  background-color:#c2c2c2 !important;
+}
+
+.light-theme .entries .post.type-podcast .entry-header .podcast_player {
+  background-color:#c2c2c2; 
+}
+
+.light-theme.podcaster-theme .mejs-controls .mejs-time-rail .mejs-time-float {
+  background-color:#777;
+  color:#eee;
+}
+
+.light-theme.podcaster-theme .mejs-controls .mejs-time-rail .mejs-time-float-corner {
+  border-color:#777 transparent transparent;
+}
+
+.light-theme.podcaster-theme .mejs-controls .mejs-time-rail .mejs-time-total {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.light-theme.podcaster-theme .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.light-theme.podcaster-theme .mejs-controls .mejs-time-rail .mejs-time-loaded {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.light-theme.podcaster-theme .mejs-controls .mejs-button button {
+  font-family:'Batch Icons';
+  color:#666;
+  display:block;
+  font-size: 16px;
+}
+
+.light-theme.podcaster-theme .mejs-controls .mejs-button button:hover {
+  color:#444;
+}
+
+.light-theme.podcaster-theme .mejs-controls .mejs-button.mejs-volume-button.mejs-mute button,
+.light-theme.podcaster-theme .mejs-controls .mejs-button.mejs-volume-button.mejs-unmute button,
+.light-theme.podcaster-theme .mejs-controls .mejs-button.mejs-playpause-button.mejs-play button,
+.light-theme.podcaster-theme .mejs-controls .mejs-button.mejs-playpause-button.mejs-pause button {
+  background-image:none;
+}
+
+.light-theme.podcaster-theme .mejs-controls .mejs-button.mejs-volume-button.mejs-mute button:before {
+  content:'\f03B' ;
+}
+
+.light-theme.podcaster-theme .mejs-controls .mejs-button.mejs-volume-button.mejs-unmute button:before {
+  content:'\f038' ;
+}
+
+.light-theme.podcaster-theme .mejs-controls .mejs-button.mejs-playpause-button.mejs-play button:before {
+  content:'\f16B' ;
+}
+
+.light-theme.podcaster-theme .mejs-controls .mejs-button.mejs-playpause-button.mejs-pause button:before {
+  content:'\f16C' ;
+}
+
+.light-theme .mejs-container .mejs-controls .mejs-time span {
+  color:#666 !important;
+}
