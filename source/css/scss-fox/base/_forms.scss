@@ -1,0 +1,107 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+form ol, form ul {
+	list-style: none;
+	margin-left: 0;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+form p {
+	margin: 0;
+}
+
+label {
+	display: block;
+	padding-bottom: 0;
+	margin-bottom: $space-half; //override
+	font-size: $font-size-med;
+	color: $gray;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0 1px 1em;
+}
+
+input, textarea {
+	width: 100%;
+	border: 1px solid $gray-light-3;
+	padding: $pad-half 0.65rem !important;
+	font-size: $font-size-med;
+}
+
+input[type=text], input[type=search], input[type=url], input[type=number], input[type=email], textarea {
+	-webkit-appearance: none;
+	background-color: $white;
+	border: 1px solid $gray-light-3;
+}
+
+button, input[type="submit"] {
+	padding: $pad;
+	cursor: pointer;
+	width: auto;
+	padding: .5em 2em !important;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.3em;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+//Form Field Container
+.field-container {
+	margin-bottom: $space;
+}
+
+/* Validation */
+.has-error {
+	border-color: $error;
+}
+.is-valid {
+	border-color: $valid;
+}
+
+//reCaptcha
+.g-recaptcha {
+	margin-bottom: 2em;
+}
+
+/*------------------------------------*\
+    $SPECIFIC FORMS
+\*------------------------------------*/
+
+//hide injected br tags
+.wpcf7-form {
+	button,
+	input[type=submit] {
+		background-color: $green-dark !important;
+	}
+}
+div.wpcf7-response-output {
+	font-size: $font-size-small-2;
+	margin: 0 0 1em;
+}
+div.wpcf7-mail-sent-ok {
+	border: 1px solid $green;
+	background-color: $green-light;
+	padding: $pad-half;
+	text-align: center;
+}

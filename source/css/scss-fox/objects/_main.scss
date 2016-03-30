@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+.main-content, .page {
+	background-color: #ececec;
+}
+
+//overrides for podcaster theme
+.page.page-template .post .entry-content, 
+.page.page-template-default .post .entry-content,
+.post-type-archive-podcast.archive .main-content {
+	background-color: #ececec;
+}

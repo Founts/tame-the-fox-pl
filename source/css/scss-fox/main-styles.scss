@@ -1,0 +1,150 @@
+/*
+  The child theme styles are placed in this file as 'dynamic' styles from parent are being loaded and
+  overriding the child theme styles.
+*/
+
+@import "generic/variables";
+
+/*------------------------------------*\
+    $GLOBAL ELEMENTS
+\*------------------------------------*/
+@import "base/global-classes";
+@import "base/main";
+@import "base/forms";
+
+/*------------------------------------*\
+    $TEXT Styles
+\*------------------------------------*/
+@import "objects/blocks";
+@import "objects/text";
+
+/*------------------------------------*\
+    $COMPONENT Styles
+\*------------------------------------*/
+@import "objects/main";
+@import "objects/sections";
+
+
+//move below to files/folders
+
+/* HEADER */
+.above, .postfooter {
+    background-color: #c74600;
+}
+.above.small_nav, .above.small_nav.nav-sticky {
+    background-color: #3b2314 !important;
+}
+.above.small_nav #nav .thst-menu li a, 
+.above.small_nav header .main-title a:link, 
+.above.small_nav header .main-title a:visited {
+    color: #fff;
+}
+
+.front-page-header {
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 991px) {
+	header .main-title a {
+	   	background-size: 50% auto;
+	   	min-width: 260px;
+	}
+}
+@media screen and (max-width: 991px){
+	.open-menu {
+		right: 15px;
+		left: auto !important;
+	}
+}
+@media screen and (max-width: 991px){
+	#nav {
+		right: 0;
+	}
+}
+
+/* BODY */
+.super-container {
+	background: #e5e5e5 !important;
+}
+
+.list-of-episodes {
+	padding-top: 0 !important;
+}
+
+/* HERO */
+.schedule-message {
+	color: $white;
+}
+
+/* MAIL CHIMP FORM */
+#mc_embedbed-subscribe {
+	display: inline-block;
+}
+
+#mc_embed_signup {
+	clear: left;
+    border-radius: 7px;
+    padding: 0 20px 20px;
+    margin-top: 0px;
+    overflow: hidden;
+    background: #fff;
+}
+
+#mc_embed_signup .mc-field-group {
+	padding-bottom: 0; 
+	max-width: 240px; 
+	display: inline-block;
+	min-height: auto !important;
+	margin-right: .5em !important;
+}
+#mce-EMAIL {
+	display: inline-block;
+	line-height: normal !important;
+}
+
+#mc_embed_signup .mc-field-group input {
+    padding: .5em 0 !important;
+    text-indent: 2%;
+    font-size: 1em !important;
+}
+#mc_embed_signup .submit {
+	display: inline-block;
+	vertical-align: top;
+}
+#mc_embed_signup .button,
+.button {
+	font-size: 1em !important;
+	line-height: normal !important;
+	padding: .5em 1.25em !important;
+	margin: 0 !important;
+    height: auto !important; //41px;
+    background-color: #c74600 !important;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error,
+#mce_inline_error {
+	margin: 0 !important;
+}
+
+/* FOOTER */
+footer .footer-widgets {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: #3b2314;
+	color: white;
+}
+footer .main {
+	border-top: 4px solid #35ba09;
+}
+footer .logo {
+	display: block;
+}
+
+footer .credit {
+	margin: auto;
+	text-align: center;
+	line-height: 1em;
+}
+.postfooter {
+	background-color: #3b2314 !important;
+}

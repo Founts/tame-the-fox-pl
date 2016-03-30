@@ -1,0 +1,10 @@
+.section {
+	margin-bottom: 1em;
+	height: 100%; //collapse margin fix
+}
+.section-title {
+	color: $gray;
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: .5em;
+}

@@ -1,0 +1,75 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+
+//Colors
+$red-fox : #c74600;
+$red-fox-light : #ffb68f;
+$green-light : #91de78;
+$green : #35ba09;
+$green-dark : #207105;
+$gray : #606060;
+$gray-light : #f9f9f9;
+$gray-light-2 : #ddd;
+$gray-light-3 : #bbb;
+$gray-med : #545454;
+$gray-dark : #333;
+$gray-dark-2 : #131313;
+$white : #fff;
+// $black : #000;
+// $dim : rgba(0,0,0,0.5);
+$error : #f00;
+$valid : $green;
+// $warning : #fff664;
+// $information : #000db5;
+
+
+//Typography
+$font : "calluna-sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+// $font-secondary : Georgia, Times, "Times New Roman", serif;
+
+// NOTE: bootstrap root font size is 14px
+$font-size-small : 1em;
+$font-size-small-2 : 1.143em; //16px
+$font-size-med : 1.5em; // normal text
+//$font-size-med : 1.714em; //24px using root
+// $font-size-med-2: 1.0625em;
+// $font-size-large : 1.4375em;
+$font-size-large : 1.5em;
+$font-size-large-2 : 3em;
+// 2.143; 30px using root
+// .9286; 13px using root
+
+//Layout
+// $max-width: 72em;
+
+//Defaults
+$space : 1em;
+$space-and-half : $space*1.5;
+$space-double : $space*2;
+$space-quad : $space*4;
+$space-half : $space/2;
+$pad : 1em;
+$pad-and-half : $pad*1.5;
+$pad-double : $pad*2;
+$pad-half : $pad/2;
+$pad-quarter :$pad/4;
+
+//Borders
+// $border-med: 3px;
+// $border-thick: 7px;
+$border-radius: 4px;
+
+//Breakpoints
+// $bp-small : 24em;
+// $bp-small-2 : 29.75em;
+$bp-small-3 : 39.8em;
+// $bp-med : 46.8em;
+// $bp-med-2 : 48em;
+// $bp-large : 50em;
+// $bp-large-2 : 66em;
+// $bp-xl : 73em;
+// $bp-xxl : 89em;
+// $bp-xxxl : 93em;
+
+//

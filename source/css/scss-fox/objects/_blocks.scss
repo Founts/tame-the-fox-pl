@@ -1,0 +1,135 @@
+/*.inside-container {
+	position: absolute; 
+	left: 0%; 
+	top: 0px;
+}*/
+.block {
+	padding: 1em;
+	margin: 0 0 2.5em;
+	box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+	border-radius: $border-radius;
+}
+.block p {
+	margin: 0;
+	color: $gray;
+	font-size: $font-size-large;
+	line-height: 1.5em;
+}
+
+// PAGE HEADER
+.reg {
+	background: $red-fox-light;
+}
+.heading {
+	padding: 50px 0;
+	.title {
+		padding: 60px 0 60px;
+		color: $gray;
+
+		h1 {
+			margin: 0;
+			font-size: $font-size-large-2 ;
+    		font-weight: 600;
+		}
+		p {
+			margin: 1em 0 0;
+		}
+	}
+}
+
+// *overrides*
+.archive .reg .heading .title, 
+.page .reg .heading .title {
+	h1, p {
+		color: $gray !important;
+	}
+	p {
+		margin: 1em 0 0;	
+	}
+}
+	// below overrides dynamic styles of theme
+.page .reg, 
+.podcast-archive .reg, 
+.search .reg, .archive .reg {
+    background-color: $red-fox-light;
+}
+
+// PERSON BLOCK
+.person-image,
+.person-profile {
+	display: inline-block;
+}
+.person-image {
+	// width: 30%;
+	// text-align: right;
+}
+.person-image img {
+	width: 100%;
+	max-width: 260px;
+}
+.person-profile {
+	margin: 0 1%;
+	@media all and (min-width: $bp-small-3) {
+		vertical-align: top;
+		width: 67%;
+	}
+}
+.person-name {
+	//pulled from h2 article list
+	font-size: 30px;
+    font-weight: 100;
+    margin: 4px 0 8px 0;
+    line-height: 1em;
+    color: $gray;
+}
+.person-title {
+	//pulled from ul article list
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: $red-fox;
+}
+.person-desc {
+	font-size: $font-size-large;
+	line-height: 1.5em;
+	color: $gray-med;
+}
+
+
+/* Block Thumbnail with Headline */
+// .block-thumb {
+// 	display: table;
+// 	width: 100%;
+// 	border-collapse: collapse;
+
+// 	.b-inner {
+// 		display: table-row;
+// 		vertical-align: top;
+//   		overflow: hidden;
+// 	}
+
+// 	.b-thumb {
+// 		@media all and (min-width: $bp-small-2) {
+// 			display: table-cell;
+// 			vertical-align: top;	
+// 	  		width: 30%;
+// 	  		max-width: 10em;
+
+// 	 		img {
+// 	 			display: block;
+// 				  width: 100%;
+// 				  height: auto;
+// 	 		}
+//  		}
+// 	}
+
+// 	.b-text {
+// 		@media all and (min-width: $bp-small-2) {
+// 			display: table-cell;
+// 			width: 70%;
+// 			padding: 0 $pad;
+// 		}
+// 	}
+// }
