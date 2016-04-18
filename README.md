@@ -1,5 +1,5 @@
-# taming-the-fox-pl
-The Taming the Fox website pattern library (using Pattern Lab).
+# tame-the-fox-pl
+The Tame the Fox website pattern library (using Pattern Lab).
 
 ## License
 The code in this repository is licensed using the MIT license unless otherwise noted. Please see the LICENSE file for details.
