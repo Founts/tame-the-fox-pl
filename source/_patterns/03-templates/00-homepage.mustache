@@ -1,40 +1,52 @@
-<div class="page" id="page">
-	{{> organisms-header }}
-	<div role="main">
-		{{# emergency }}
-			{{> molecules-alert:error }}
-		{{/ emergency }}
-		{{# hero }}
-			{{> molecules-block-hero }}
-		{{/ hero}}
-
-		<div class="g g-3up">
-			{{# touts}}
-				<div class="gi">
-					{{> molecules-block-inset }}
+<div class="super-container light-icons">
+	{{>organisms-header-podcaster}}
+	<div class="front-page-header static nav-solid newest nav-sticky  has-header ">
+		<div class="background-image parallax-off" style="background-image: url(http://fox.dev/wp-content/uploads/2016/03/nature-beautiful-forest-path-background-picture-new-best-hd-wallpapers-of-forest.jpg); background-size:cover;" >
+			<div class="inside">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="text audio" style="text-align:left;">
+								<span class="mini-title">Featured Episode</span><h2><a href="#">Episode 001: The first one</a></h2>
+								<div class="audio_player"><audio class="wp-audio-shortcode" id="audio-21-2" preload="none" style="width: 100%; visibility: hidden;" controls="controls"><source type="audio/mpeg" src="https://archive.org/download/testmp3testfile/mpthreetest.mp3?_=2" /><a href="https://archive.org/download/testmp3testfile/mpthreetest.mp3">https://archive.org/download/testmp3testfile/mpthreetest.mp3</a></audio>
+								</div><!--audio_player-->
+							</div><!-- .text -->
+							<div class="next-week">
+								<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<div class="content scheduled">
+										<span class="mini-title">Next Time on Tame the Fox</span><h3>Another engaging episode...</h3></div><!-- .content -->
+									</div><!-- .col -->
+									<div class="col-lg-6 col-md-6">
+										<div class="content buttons">
+											<a href="" class="butn small">Subscribe with iTunes</a><a href="" class="butn small">Subscribe with RSS</a>
+										</div><!-- .content -->
+								</div><!-- .col -->
+								</div><!-- .row -->
+							</div><!-- .next-week -->
+						</div>
+					</div>
 				</div>
-			{{/ touts}}
-		</div><!--end 3up-->
-
-		<hr />
-
-		<div class="l-two-col">
-			<div class="l-main">
-				<section class="section latest-posts">
-					<h2 class="section-title">Latest Posts</h2>
-					<ul class="post-list">
-						{{# latest-posts }}
-							<li>{{> molecules-media-block }}</li>
-						{{/ latest-posts }}
-					</ul>
-					<a href="#" class="text-btn">View more posts</a>
-				</section>
-			</div><!--end .l-main-->
-
-			<div class="l-sidebar">
-				{{> organisms-recent-tweets }}
-			</div><!--end .l-sidebar-->
-		</div><!--end .l-two-col-->
-	</div><!--End role=main-->
-	{{> organisms-footer }}
-</div>
+			</div><!-- .inside -->
+		</div>
+	</div>	   		
+	<div class="container">
+		<div class="col-lg-6">
+			{{>organisms-newsletter-sign-up}}
+		</div>
+		<div class="col-lg-6">
+			<div class="block">
+				<!--molecule-blockquote-with-citation-->
+				<blockquote>
+					<p>You become responsible for whatever you've tamed.</p>
+					<div class="mb-attribution">
+						<p class="mb-author">Antoine de Saint-Exupéry</p>
+						<cite class="citation">The Little Prince</cite>
+					</div>
+				</blockquote>
+			</div>
+		</div>
+	</div>	
+	{{>organisms-episode-list}}
+	{{>organisms-footer}}
+</div><!--end .supercontainer-->

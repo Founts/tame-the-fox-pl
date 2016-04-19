@@ -1,0 +1,7 @@
+input[type=submit]:link, input[type=submit]:visited, #respond #commentform #submit:link, #respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited {
+	background: $red-fox;
+}
+
+.input[type="submit"]:link, input[type="submit"]:visited, #respond #commentform #submit:link, #respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited, input.secondary[type="submit"], #respond #cancel-comment-reply-link:link, #respond #cancel-comment-reply-link:visited, #comments .commentlist li .comment-body .reply a:link, #comments .commentlist li .comment-body .reply a:visited, #respond #commentform #submit, .wpcf7-form-control.wpcf7-submit, .fromtheblog.list article .post-content .cats a:link, .fromtheblog.list article .post-content .cats a:visited {
+    color: $white;
+}

@@ -15,17 +15,23 @@
 @import "base/forms";
 
 /*------------------------------------*\
+    $PAGE STRUCTURE
+\*------------------------------------*/
+@import "objects/main";
+@import "objects/footer";
+
+/*------------------------------------*\
     $TEXT Styles
 \*------------------------------------*/
-@import "objects/blocks";
 @import "objects/text";
+
 
 /*------------------------------------*\
     $COMPONENT Styles
 \*------------------------------------*/
-@import "objects/main";
 @import "objects/sections";
-
+@import "objects/blocks";
+@import "objects/buttons";
 
 //move below to files/folders
 

@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+footer {
+	border-top: 4px solid $green-dark;
+}
+
+.copyright {
+	font-size: 14px;	
+}
+.colophon {
+	font-size: 14px;
+
+	a {
+		color: $red-fox !important;
+	}
+}
+.postfooter .row div:nth-child(3) {
+	@media all and (min-width: 62em) {
+		text-align: right;
+	}
+}

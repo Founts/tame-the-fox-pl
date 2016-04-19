@@ -271,8 +271,67 @@ div.wpcf7-mail-sent-ok {
 }
 
 /*------------------------------------*\
+    $PAGE STRUCTURE
+\*------------------------------------*/
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+.main-content, .page {
+  background-color: #ececec;
+}
+
+.page.page-template .post .entry-content,
+.page.page-template-default .post .entry-content,
+.post-type-archive-podcast.archive .main-content {
+  background-color: #ececec;
+}
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+footer {
+  border-top: 4px solid #207105;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.colophon {
+  font-size: 14px;
+}
+.colophon a {
+  color: #c74600 !important;
+}
+
+@media all and (min-width: 62em) {
+  .postfooter .row div:nth-child(3) {
+    text-align: right;
+  }
+}
+
+/*------------------------------------*\
     $TEXT Styles
 \*------------------------------------*/
+.small-text {
+  font-size: 1em;
+}
+
+/*------------------------------------*\
+    $COMPONENT Styles
+\*------------------------------------*/
+.section {
+  margin-bottom: 4em;
+  height: 100%;
+}
+
+.section-title {
+  color: #606060;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: .5em;
+}
+
 /*.inside-container {
 	position: absolute; 
 	left: 0%; 
@@ -375,36 +434,12 @@ div.wpcf7-mail-sent-ok {
 }
 
 /* Block Thumbnail with Headline */
-.small-text {
-  font-size: 1em;
+input[type=submit]:link, input[type=submit]:visited, #respond #commentform #submit:link, #respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited {
+  background: #c74600;
 }
 
-/*------------------------------------*\
-    $COMPONENT Styles
-\*------------------------------------*/
-/*------------------------------------*\
-    $MAIN CONTENT AREA
-\*------------------------------------*/
-.main-content, .page {
-  background-color: #ececec;
-}
-
-.page.page-template .post .entry-content,
-.page.page-template-default .post .entry-content,
-.post-type-archive-podcast.archive .main-content {
-  background-color: #ececec;
-}
-
-.section {
-  margin-bottom: 4em;
-  height: 100%;
-}
-
-.section-title {
-  color: #606060;
-  font-size: 36px;
-  font-weight: 600;
-  margin-bottom: .5em;
+.input[type="submit"]:link, input[type="submit"]:visited, #respond #commentform #submit:link, #respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited, input.secondary[type="submit"], #respond #cancel-comment-reply-link:link, #respond #cancel-comment-reply-link:visited, #comments .commentlist li .comment-body .reply a:link, #comments .commentlist li .comment-body .reply a:visited, #respond #commentform #submit, .wpcf7-form-control.wpcf7-submit, .fromtheblog.list article .post-content .cats a:link, .fromtheblog.list article .post-content .cats a:visited {
+  color: white;
 }
 
 /* HEADER */
