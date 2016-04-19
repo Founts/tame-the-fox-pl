@@ -1,0 +1,162 @@
+/* Text-Related Elements */ 
+blockquote {
+	position: relative;
+	z-index: 0;
+	background: none;
+	border: none;
+	padding: 18px 18px 4px 18px;
+	font-size: 16px; //1.2857em
+	margin-bottom: $space;
+}
+blockquote > p, .block blockquote > p {
+	position: relative;
+	font-size: 21px; //1.714em;
+    line-height: 1.3;
+    font-weight: bold;
+    z-index: 10;
+    margin: 0;
+
+	@media all and (min-width: $bp-small-3){
+    	font-size: 24px; //2.1428em;		
+	}
+}
+// blockquote on the p element
+// blockquote > p:before {
+//     content: '\201C';
+//     font-size: 130px;
+//     line-height: 1;
+//     position: absolute;
+//     left: 0;
+//     top: 44px;
+//     color: #d8d8d8;
+//     z-index: -1;
+
+//  	@media all and (min-width: $bp-small-3){
+//  		font-size: 150px;
+//  		top: 52px;
+//  	}   
+// }
+// blockquote > p:after {
+// 	content: '\201D';
+// 	font-size: 130px;
+// 	position: absolute;
+// 	bottom: 10px;
+// 	right: 0;
+// 	color: #d8d8d8;
+// 	z-index: -1;
+
+//     @media all and (min-width: $bp-small-3){
+//  		font-size: 150px;
+//  		bottom: 4px;
+//  	}
+// }
+
+// universal for blockquote and blockquote with citation
+// could put first quote on the p element - pretty much like the above
+blockquote:before {
+    content: '\201C';
+    font-size: 130px;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #d8d8d8;
+    z-index: -1;
+
+ 	@media all and (min-width: $bp-small-3){
+ 		font-size: 150px;
+ 		top: -4px;
+ 	}   
+}
+blockquote > p:after {
+	content: '\201D';
+	font-size: 130px;
+	line-height: 1;
+	position: absolute;
+	bottom: -88px;
+	right: 0;
+	color: #d8d8d8;
+	z-index: -1;
+
+    @media all and (min-width: $bp-small-3){
+ 		font-size: 150px;
+ 		bottom: -102px;
+ 	}
+}
+
+.mb-attribution {
+    padding-left: 1em;
+    line-height: normal;
+}
+p.mb-author, .block p.mb-author {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: normal;
+}
+cite.citation {
+    font-style: italic;
+    line-height: normal;
+}
+
+//larger sized version
+// blockquote {
+// 	position: relative;
+// 	z-index: 0;
+// 	background: none;
+// 	border: none;
+// 	padding: 22px 20px 10px 25px;//10px 20px 10px 25px;
+// 	font-size: 18px; //1.2857em
+// }
+// blockquote > p {
+// 	font-size: 24px; //1.714em;
+//     line-height: 1.3;
+//     font-weight: bold;
+//     z-index: 10;
+
+// 	@media all and (min-width: $bp-small-3){
+//     	font-size: 30px; //2.1428em;		
+// 	}
+// }
+// //or blockquote p:before
+// blockquote:before {
+//     content: '\201C';
+//     font-size: 160px;
+//     position: absolute;
+//     left: 0;
+//     top: 60px;
+//     color: #d8d8d8;
+//     z-index: -1;
+
+//  	@media all and (min-width: $bp-small-3){
+//  		font-size: 226px;
+//  		top: 80px;
+//  	}   
+// }
+// blockquote:after {
+// 	content: '\201D';
+// 	font-size: 160px;
+// 	position: absolute;
+// 	bottom: 20px;
+// 	right: 0;
+// 	color: #d8d8d8;
+// 	z-index: -1;
+
+//     @media all and (min-width: $bp-small-3){
+//  		font-size: 226px;
+//  		bottom: 4px;
+//  	}
+// }
+// .mb-attribution {
+//     padding-left: 1em;
+// }
+// p.mb-author {
+//     font-size: 18px;
+//     font-weight: bold;
+//     margin-bottom: 0;
+//     line-height: 1;
+// }
+// cite.citation {
+//     font-style: italic;
+//     line-height: 1;
+// }

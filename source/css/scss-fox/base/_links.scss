@@ -1,0 +1,10 @@
+/* Links */ 
+a, a:link, a:visited {
+	color: $red-fox;
+	text-decoration: none;
+	outline: 0;
+	
+	&:hover, &:focus {
+		color: $red-fox;
+	}
+}
