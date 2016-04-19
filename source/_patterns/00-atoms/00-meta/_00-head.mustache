@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width" />
 		
 		<!--<link rel="stylesheet" href="../../css/style.css?{{ cacheBuster" media="all" /> }}-->
+		{{! wordpress core stylesheets }}
+		<link rel='stylesheet' href='../../vendor/wordpress/js/mediaelement/mediaelementplayer.min.css' type='text/css' media='all' />
+		<link rel='stylesheet' href='../../vendor/wordpress/js/mediaelement/wp-mediaelement.css' type='text/css' media='all' />
+		{{! END wordpress core stylesheets }}
 		{{! podcaster theme stylesheets }}
 		<link rel='stylesheet' id='dashicons-css'  href='../../vendor/podcaster/css/dashicons.min.css?ver=4.4.2' type='text/css' media='all' />
 		<link rel='stylesheet' id='contact-form-7-css'  href='../../vendor/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
@@ -13,13 +17,12 @@
 		<link rel='stylesheet' id='themestation-bootstrap-css'  href='../../vendor/podcaster/css/bootstrap.min.css?ver=4.4.2' type='text/css' media='all' />
 		<link rel='stylesheet' id='themestation-flexslider-css'  href='../../vendor/podcaster/css/flexslider.css?ver=4.4.2' type='text/css' media='all' />
 		<link rel='stylesheet' id='themestation-lightbox-css'  href='../../vendor/podcaster/css/lightbox.css?ver=4.4.2' type='text/css' media='all' />
-		<link rel='stylesheet' id='themestation-audio-player-css'  href='../../vendor/podcaster/css/audio-player.css?ver=4.4.2' type='text/css' media='all' />
+		<link rel='stylesheet' id='themestation-audio-player-css'  href='../../vendor/podcaster/css/audio-player.css' type='text/css' media='all' />
 		<link rel='stylesheet' id='contscr-css-css'  href='../../vendor/podcaster/css/jquery.mCustomScrollbar.css?ver=4.4.2' type='text/css' media='all' />
 		<link rel="stylesheet" href="../../vendor/podcaster/css/stylephp.css" media="all" />
 		{{! <link rel='stylesheet' id='mailchimp-css'  href='//cdn-images.mailchimp.com/embedcode/classic-10_7.css?ver=4.4.2' type='text/css' media='all' /> }}
-
 		{{! END podcaster theme stylesheets }}
-		
+
 		{{! taming the fox styles }}
 		<link rel="stylesheet" href="../../css/scss-fox/main-styles.min.css" media="all" />
 		{{! END taming the fox styles }}
@@ -38,6 +41,7 @@
 		<script type="text/javascript" src="../../vendor/jquery/ui/tabs.min.js?ver=1.11.4"></script>
 		<script type="text/javascript" src="../../vendor/podcaster/js/modernizr.js?ver=1.0"></script>
 		<script type="text/javascript" src="../../vendor/podcaster/js/res_men.js?ver=1.0"></script>
+		<script type="text/javascript" src="../../vendor/wordpress/js/mediaelement/wp-mediaelement.js"></script>
 		
 		<script src="https://use.typekit.net/wqi8uic.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
