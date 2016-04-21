@@ -4,6 +4,10 @@
 */
 
 @import "generic/variables";
+@import "generic/mixins";
+@import "generic/reset";
+
+
 
 /*------------------------------------*\
     $GLOBAL ELEMENTS
@@ -13,17 +17,25 @@
 @import "base/text";
 @import "base/links";
 @import "base/forms";
+@import "base/animation";
+
+
 
 /*------------------------------------*\
     $PAGE STRUCTURE
 \*------------------------------------*/
 @import "objects/main";
+@import "objects/header";
 @import "objects/footer";
+
+
 
 /*------------------------------------*\
     $TEXT Styles
 \*------------------------------------*/
 @import "objects/text";
+
+
 
 
 /*------------------------------------*\
@@ -33,42 +45,9 @@
 @import "objects/blocks";
 @import "objects/buttons";
 
-//move below to files/folders
+//TODO move below to files/folders
 
-/* HEADER */
-.above, .postfooter {
-    background-color: #c74600;
-}
-.above.small_nav, .above.small_nav.nav-sticky {
-    background-color: #3b2314 !important;
-}
-.above.small_nav #nav .thst-menu li a, 
-.above.small_nav header .main-title a:link, 
-.above.small_nav header .main-title a:visited {
-    color: #fff;
-}
 
-.front-page-header {
-	margin-bottom: 40px;
-}
-
-@media screen and (max-width: 991px) {
-	header .main-title a {
-	   	background-size: 50% auto;
-	   	min-width: 260px;
-	}
-}
-@media screen and (max-width: 991px){
-	.open-menu {
-		right: 15px;
-		left: auto !important;
-	}
-}
-@media screen and (max-width: 991px){
-	#nav {
-		right: 0;
-	}
-}
 
 /* BODY */
 .super-container {

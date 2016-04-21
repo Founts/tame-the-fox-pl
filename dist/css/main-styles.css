@@ -6,6 +6,25 @@
     $VARIABLES
 \*------------------------------------*/
 /*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+/* Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
 /*------------------------------------*\
@@ -270,6 +289,25 @@ div.wpcf7-mail-sent-ok {
   text-align: center;
 }
 
+.animate-fade {
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -ms-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+.animate-fade:hover {
+  opacity: 0;
+}
+
+.animate-move > .demo-shape {
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
 /*------------------------------------*\
     $PAGE STRUCTURE
 \*------------------------------------*/
@@ -284,6 +322,84 @@ div.wpcf7-mail-sent-ok {
 .page.page-template-default .post .entry-content,
 .post-type-archive-podcast.archive .main-content {
   background-color: #ececec;
+}
+
+/* HEADER */
+.above,
+.postfooter {
+  background-color: #c74600;
+}
+
+.above.small_nav,
+.above.small_nav.nav-sticky {
+  background-color: #3b2314 !important;
+}
+
+.above.small_nav #nav .thst-menu li a,
+.above.small_nav header .main-title a:link,
+.above.small_nav header .main-title a:visited {
+  color: #fff;
+}
+
+.front-page-header {
+  margin-bottom: 40px;
+}
+
+header .main-title a {
+  background-size: 50%;
+}
+@media screen and (min-width: 481px) {
+  header .main-title a {
+    background-size: 240px;
+  }
+}
+@media screen and (min-width: 991px) {
+  header .main-title a {
+    background-size: auto;
+    min-width: 260px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .open-menu {
+    right: 15px;
+    left: auto !important;
+    width: 110px;
+    padding: 47px 0;
+    text-align: center;
+    background-color: #c74600;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 481px) {
+  .open-menu {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .above.large_nav .open-menu,
+  .above.small_nav .open-menu {
+    padding: 24px 0;
+    width: 64px;
+    text-align: center;
+    background: #c74600;
+  }
+}
+
+.open-menu:focus,
+.open-menu:hover,
+.open-menu:link:focus,
+.open-menu:link:hover,
+.open-menu:visited:focus,
+.open-menu:visited:hover {
+  color: #eee;
+}
+
+@media screen and (max-width: 991px) {
+  #nav {
+    right: 0;
+  }
 }
 
 /*------------------------------------*\
@@ -372,17 +488,23 @@ footer {
 
 .archive .reg .heading .title h1, .archive .reg .heading .title p,
 .page .reg .heading .title h1,
-.page .reg .heading .title p {
-  color: #606060 !important;
+.page .reg .heading .title p,
+.reg .heading .title h1,
+.reg .heading .title p {
+  color: #ececec !important;
+  text-shadow: 0px 4px 10px black;
 }
 .archive .reg .heading .title p,
-.page .reg .heading .title p {
-  margin: 1em 0 0;
+.page .reg .heading .title p,
+.reg .heading .title p {
+  margin: .5em 0 0;
+  font-size: 16px;
 }
 
 .page .reg,
 .podcast-archive .reg,
-.search .reg, .archive .reg {
+.search .reg,
+.archive .reg {
   background-color: #ffb68f;
 }
 
@@ -433,6 +555,12 @@ footer {
   color: #545454;
 }
 
+.latest-episode .next-week .mini-title,
+.front-page-header .mini-title,
+.next-week .mini-title {
+  color: #c74600;
+}
+
 /* Block Thumbnail with Headline */
 input[type=submit]:link, input[type=submit]:visited, #respond #commentform #submit:link, #respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited {
   background: #c74600;
@@ -442,42 +570,6 @@ input[type=submit]:link, input[type=submit]:visited, #respond #commentform #subm
   color: white;
 }
 
-/* HEADER */
-.above, .postfooter {
-  background-color: #c74600;
-}
-
-.above.small_nav, .above.small_nav.nav-sticky {
-  background-color: #3b2314 !important;
-}
-
-.above.small_nav #nav .thst-menu li a,
-.above.small_nav header .main-title a:link,
-.above.small_nav header .main-title a:visited {
-  color: #fff;
-}
-
-.front-page-header {
-  margin-bottom: 40px;
-}
-
-@media screen and (max-width: 991px) {
-  header .main-title a {
-    background-size: 50% auto;
-    min-width: 260px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .open-menu {
-    right: 15px;
-    left: auto !important;
-  }
-}
-@media screen and (max-width: 991px) {
-  #nav {
-    right: 0;
-  }
-}
 /* BODY */
 .super-container {
   background: #e5e5e5 !important;

@@ -1,0 +1,70 @@
+/* HEADER */
+.above, 
+.postfooter {
+    background-color: #c74600;
+}
+.above.small_nav, 
+.above.small_nav.nav-sticky {
+    background-color: #3b2314 !important;
+}
+.above.small_nav #nav .thst-menu li a, 
+.above.small_nav header .main-title a:link, 
+.above.small_nav header .main-title a:visited {
+    color: #fff;
+}
+
+.front-page-header {
+	margin-bottom: 40px;
+}
+
+// Logo responsiveness
+header .main-title a {
+	background-size: 50%;
+
+	@media screen and (min-width: 481px) {
+		background-size: 240px;
+	}
+	@media screen and (min-width: 991px) {
+    	background-size: auto;
+	   	min-width: 260px;
+    }
+}
+
+// show/hide nav button
+.open-menu {
+	@media screen and (max-width: 991px){
+		right: 15px;
+		left: auto !important;
+		width: 110px;
+	    padding: 47px 0;
+	    text-align: center;
+	    background-color: $red-fox;
+	    text-decoration: none;
+	}
+	@media screen and (min-width: 481px) {
+		font-size: 16px;
+	}
+}
+.above.large_nav .open-menu, 
+.above.small_nav .open-menu {
+	@media screen and (max-width: 767px) {
+	    padding: 24px 0;
+	    width: 64px;
+	    text-align: center;
+	    background: #c74600;
+    }
+}
+.open-menu:focus, 
+.open-menu:hover, 
+.open-menu:link:focus, 
+.open-menu:link:hover, 
+.open-menu:visited:focus, 
+.open-menu:visited:hover {
+	color: #eee;
+}
+
+#nav {
+	@media screen and (max-width: 991px){
+		right: 0;
+	}
+}
