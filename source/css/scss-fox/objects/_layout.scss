@@ -1,0 +1,11 @@
+// block adjustments because podcaster/bootstrap doesn't space elements
+[role=main] {
+	.col-lg-3,
+ 	.col-lg-6 {
+ 		margin-bottom: $space-double;
+
+ 		@media all and (min-width: 1199px) {
+			margin-bottom: 0;
+ 		}
+	}
+}

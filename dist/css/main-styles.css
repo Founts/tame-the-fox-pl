@@ -309,6 +309,20 @@ div.wpcf7-mail-sent-ok {
 }
 
 /*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+[role=main] .col-lg-3,
+[role=main] .col-lg-6 {
+  margin-bottom: 2em;
+}
+@media all and (min-width: 1199px) {
+  [role=main] .col-lg-3,
+  [role=main] .col-lg-6 {
+    margin-bottom: 0;
+  }
+}
+
+/*------------------------------------*\
     $PAGE STRUCTURE
 \*------------------------------------*/
 /*------------------------------------*\
@@ -325,20 +339,63 @@ div.wpcf7-mail-sent-ok {
 }
 
 /* HEADER */
-.above,
-.postfooter {
-  background-color: #c74600;
+.above.nav-sticky.header-scrolled,
+.above.nav-sticky.header-scrolled .open-menu {
+  background-color: #3b2314;
 }
 
-.above.small_nav,
-.above.small_nav.nav-sticky {
-  background-color: #3b2314 !important;
+.above,
+.postfooter,
+.above.nav-sticky .open-menu {
+  background-color: #c74600;
 }
 
 .above.small_nav #nav .thst-menu li a,
 .above.small_nav header .main-title a:link,
 .above.small_nav header .main-title a:visited {
-  color: #fff;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .above.large_nav .open-menu,
+  .above.small_nav .open-menu {
+    padding: 24px 0;
+    width: 64px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .open-menu {
+    right: 15px;
+    left: auto !important;
+    width: 110px;
+    padding: 47px 0;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 481px) {
+  .open-menu {
+    font-size: 16px;
+  }
+}
+
+.open-menu:focus,
+.open-menu:hover,
+.open-menu:link:focus,
+.open-menu:link:hover,
+.open-menu:visited:focus,
+.open-menu:visited:hover {
+  color: #eee;
+}
+
+a.open-menu {
+  transition-duration: 0s;
+}
+
+.nav-placeholder {
+  padding-bottom: 0;
 }
 
 .front-page-header {
@@ -358,42 +415,6 @@ header .main-title a {
     background-size: auto;
     min-width: 260px;
   }
-}
-
-@media screen and (max-width: 991px) {
-  .open-menu {
-    right: 15px;
-    left: auto !important;
-    width: 110px;
-    padding: 47px 0;
-    text-align: center;
-    background-color: #c74600;
-    text-decoration: none;
-  }
-}
-@media screen and (min-width: 481px) {
-  .open-menu {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .above.large_nav .open-menu,
-  .above.small_nav .open-menu {
-    padding: 24px 0;
-    width: 64px;
-    text-align: center;
-    background: #c74600;
-  }
-}
-
-.open-menu:focus,
-.open-menu:hover,
-.open-menu:link:focus,
-.open-menu:link:hover,
-.open-menu:visited:focus,
-.open-menu:visited:hover {
-  color: #eee;
 }
 
 @media screen and (max-width: 991px) {
