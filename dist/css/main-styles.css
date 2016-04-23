@@ -328,6 +328,10 @@ div.wpcf7-mail-sent-ok {
 /*------------------------------------*\
     $MAIN CONTENT AREA
 \*------------------------------------*/
+.super-container {
+  background: #e5e5e5 !important;
+}
+
 .main-content, .page {
   background-color: #ececec;
 }
@@ -512,6 +516,10 @@ footer .credit {
   margin-bottom: .5em;
 }
 
+.list-of-episodes {
+  padding-top: 0 !important;
+}
+
 /*.inside-container {
 	position: absolute; 
 	left: 0%; 
@@ -548,6 +556,59 @@ footer .credit {
 }
 .heading .title p {
   margin: 1em 0 0;
+}
+
+/* MAIL CHIMP NEWSLETTER FORM BLOCK */
+#mc_embedbed-subscribe {
+  display: inline-block;
+}
+
+#mc_embed_signup {
+  clear: left;
+  border-radius: 7px;
+  padding: 0 20px 20px;
+  margin-top: 0px;
+  overflow: hidden;
+  background: #fff;
+}
+
+#mc_embed_signup .mc-field-group {
+  padding-bottom: 0;
+  max-width: 240px;
+  display: inline-block;
+  min-height: auto !important;
+  margin-right: .5em !important;
+}
+
+#mce-EMAIL {
+  display: inline-block;
+  line-height: normal !important;
+}
+
+#mc_embed_signup .mc-field-group input {
+  padding: .5em 0 !important;
+  text-indent: 2%;
+  font-size: 1em !important;
+}
+
+#mc_embed_signup .submit {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#mc_embed_signup .button,
+.button {
+  font-size: 1em !important;
+  line-height: normal !important;
+  padding: .5em 1.25em !important;
+  margin: 0 !important;
+  height: auto !important;
+  background-color: #c74600 !important;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error,
+#mce_inline_error {
+  margin: 0 !important;
 }
 
 .archive .reg .heading .title h1, .archive .reg .heading .title p,
@@ -625,10 +686,15 @@ footer .credit {
   color: #c74600;
 }
 
+/* HERO */
 @media screen and (max-width: 480px) {
   .reg.nav-sticky {
     padding-top: 0;
   }
+}
+
+.schedule-message {
+  color: white;
 }
 
 input[type=submit]:link, input[type=submit]:visited, #respond #commentform #submit:link, #respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited {
@@ -637,71 +703,4 @@ input[type=submit]:link, input[type=submit]:visited, #respond #commentform #subm
 
 .input[type="submit"]:link, input[type="submit"]:visited, #respond #commentform #submit:link, #respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited, input.secondary[type="submit"], #respond #cancel-comment-reply-link:link, #respond #cancel-comment-reply-link:visited, #comments .commentlist li .comment-body .reply a:link, #comments .commentlist li .comment-body .reply a:visited, #respond #commentform #submit, .wpcf7-form-control.wpcf7-submit, .fromtheblog.list article .post-content .cats a:link, .fromtheblog.list article .post-content .cats a:visited {
   color: white;
-}
-
-/* BODY */
-.super-container {
-  background: #e5e5e5 !important;
-}
-
-.list-of-episodes {
-  padding-top: 0 !important;
-}
-
-/* HERO */
-.schedule-message {
-  color: white;
-}
-
-/* MAIL CHIMP FORM */
-#mc_embedbed-subscribe {
-  display: inline-block;
-}
-
-#mc_embed_signup {
-  clear: left;
-  border-radius: 7px;
-  padding: 0 20px 20px;
-  margin-top: 0px;
-  overflow: hidden;
-  background: #fff;
-}
-
-#mc_embed_signup .mc-field-group {
-  padding-bottom: 0;
-  max-width: 240px;
-  display: inline-block;
-  min-height: auto !important;
-  margin-right: .5em !important;
-}
-
-#mce-EMAIL {
-  display: inline-block;
-  line-height: normal !important;
-}
-
-#mc_embed_signup .mc-field-group input {
-  padding: .5em 0 !important;
-  text-indent: 2%;
-  font-size: 1em !important;
-}
-
-#mc_embed_signup .submit {
-  display: inline-block;
-  vertical-align: top;
-}
-
-#mc_embed_signup .button,
-.button {
-  font-size: 1em !important;
-  line-height: normal !important;
-  padding: .5em 1.25em !important;
-  margin: 0 !important;
-  height: auto !important;
-  background-color: #c74600 !important;
-}
-
-#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error,
-#mce_inline_error {
-  margin: 0 !important;
 }
