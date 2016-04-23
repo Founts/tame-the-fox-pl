@@ -71,12 +71,12 @@ module.exports = function(grunt) {
             },
             dist_js: {
                 files: [
-                    { expand: true, cwd:"source/", src:"js/fox/*", dest:"dist/" }
+                    { expand: true, cwd:"source/js/", src:"prod.min.js", dest:"dist/js/" }
                 ]
             },
             wp_js: {
                 files: [
-                    { expand: true, cwd:"dist/", src:"js/fox/*", dest:"../fox-wp-theme/js/" }
+                    { expand: true, cwd:"dist/js", src:"prod.min.js", dest:"../fox-wp-theme/js/" }
                 ]
             }
             // php: {
