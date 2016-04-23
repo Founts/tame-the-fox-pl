@@ -441,6 +441,22 @@ footer {
   border-top: 4px solid #207105;
 }
 
+footer .footer-widgets {
+  padding-top: 1em;
+  padding-bottom: 0;
+  background-color: #3b2314;
+  color: white;
+}
+
+footer .logo {
+  display: block;
+}
+
+.postfooter {
+  background-color: #3b2314 !important;
+  padding: 0 0 25px;
+}
+
 .copyright {
   font-size: 14px;
 }
@@ -456,6 +472,12 @@ footer {
   .postfooter .row div:nth-child(3) {
     text-align: right;
   }
+}
+
+footer .credit {
+  margin: auto;
+  text-align: center;
+  line-height: 1em;
 }
 
 /*------------------------------------*\
@@ -676,30 +698,4 @@ input[type=submit]:link, input[type=submit]:visited, #respond #commentform #subm
 #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error,
 #mce_inline_error {
   margin: 0 !important;
-}
-
-/* FOOTER */
-footer .footer-widgets {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  background-color: #3b2314;
-  color: white;
-}
-
-footer .main {
-  border-top: 4px solid #35ba09;
-}
-
-footer .logo {
-  display: block;
-}
-
-footer .credit {
-  margin: auto;
-  text-align: center;
-  line-height: 1em;
-}
-
-.postfooter {
-  background-color: #3b2314 !important;
 }

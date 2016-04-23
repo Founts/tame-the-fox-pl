@@ -4,6 +4,20 @@
 footer {
 	border-top: 4px solid $green-dark;
 }
+footer .footer-widgets {
+	padding-top: 1em;
+	padding-bottom: 0;
+	background-color: #3b2314;
+	color: white;
+}
+footer .logo {
+	display: block;
+}
+
+.postfooter {
+	background-color: #3b2314 !important;
+	padding: 0 0 25px;
+}
 
 .copyright {
 	font-size: 14px;	
@@ -19,4 +33,10 @@ footer {
 	@media all and (min-width: 62em) {
 		text-align: right;
 	}
+}
+
+footer .credit {
+	margin: auto;
+	text-align: center;
+	line-height: 1em;
 }
