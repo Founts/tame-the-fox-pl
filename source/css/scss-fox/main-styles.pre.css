@@ -423,7 +423,7 @@ header .main-title a {
 }
 @media screen and (min-width: 991px) {
   header .main-title a {
-    background-size: auto;
+    background-size: 100%;
     min-width: 260px;
   }
 }

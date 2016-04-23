@@ -1,13 +1,18 @@
 /* HEADER */
+.above.small_nav.header-scrolled,
+.above.small_nav.nav-sticky.header-scrolled,
 .above.nav-sticky.header-scrolled,
 .above.nav-sticky.header-scrolled .open-menu {
     background-color: $brown !important;
 }
 .above, 
+.above.small_nav,
+.above.small_nav.nav-sticky,
 .postfooter,
 .above.nav-sticky .open-menu {
-    background-color: $red-fox;
+    background-color: $red-fox !important;
 }
+ 
 .above.small_nav #nav .thst-menu li a, 
 .above.small_nav header .main-title a:link, 
 .above.small_nav header .main-title a:visited {
@@ -65,7 +70,7 @@ header .main-title a {
 		background-size: 240px;
 	}
 	@media screen and (min-width: 991px) {
-    	background-size: auto;
+    	background-size: 100%;
 	   	min-width: 260px;
     }
 }
