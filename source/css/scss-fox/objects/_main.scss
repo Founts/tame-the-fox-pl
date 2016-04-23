@@ -15,3 +15,15 @@
 .post-type-archive-podcast.archive .main-content {
 	background-color: #ececec;
 }
+.archive .main-content, 
+.page.page-template .main-content .page.post, 
+.page.page-template-default .main-content .page.post, 
+.page.page-template .main-content .sidebar {
+	@media screen and (max-width: 991px) {
+		padding: 0 0;
+	}
+}
+
+.page .post .entry-content {
+    padding: 0;
+}

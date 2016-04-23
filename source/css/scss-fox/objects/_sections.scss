@@ -2,6 +2,9 @@
 	margin-bottom: $space-quad;
 	height: 100%; //collapse margin fix
 }
+.section:last-child {
+	margin-bottom: 0;
+}
 .section-title {
 	color: $gray;
 	font-size: 36px;

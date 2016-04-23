@@ -331,16 +331,33 @@ div.wpcf7-mail-sent-ok {
   background-color: #ececec;
 }
 
+@media screen and (max-width: 991px) {
+  .archive .main-content,
+  .page.page-template .main-content .page.post,
+  .page.page-template-default .main-content .page.post,
+  .page.page-template .main-content .sidebar {
+    padding: 0 0;
+  }
+}
+
+.page .post .entry-content {
+  padding: 0;
+}
+
 /* HEADER */
+.above.small_nav.header-scrolled,
+.above.small_nav.nav-sticky.header-scrolled,
 .above.nav-sticky.header-scrolled,
 .above.nav-sticky.header-scrolled .open-menu {
   background-color: #3b2314 !important;
 }
 
 .above,
+.above.small_nav,
+.above.small_nav.nav-sticky,
 .postfooter,
 .above.nav-sticky .open-menu {
-  background-color: #c74600;
+  background-color: #c74600 !important;
 }
 
 .above.small_nav #nav .thst-menu li a,
@@ -454,6 +471,10 @@ footer {
 .section {
   margin-bottom: 4em;
   height: 100%;
+}
+
+.section:last-child {
+  margin-bottom: 0;
 }
 
 .section-title {
@@ -576,7 +597,12 @@ footer {
   color: #c74600;
 }
 
-/* Block Thumbnail with Headline */
+@media screen and (max-width: 480px) {
+  .reg.nav-sticky {
+    padding-top: 0;
+  }
+}
+
 input[type=submit]:link, input[type=submit]:visited, #respond #commentform #submit:link, #respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited {
   background: #c74600;
 }
