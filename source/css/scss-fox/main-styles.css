@@ -341,7 +341,7 @@ div.wpcf7-mail-sent-ok {
 /* HEADER */
 .above.nav-sticky.header-scrolled,
 .above.nav-sticky.header-scrolled .open-menu {
-  background-color: #3b2314;
+  background-color: #3b2314 !important;
 }
 
 .above,
