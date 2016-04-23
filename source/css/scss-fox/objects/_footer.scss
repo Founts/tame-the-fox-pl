@@ -7,7 +7,7 @@ footer {
 footer .footer-widgets {
 	padding-top: 1em;
 	padding-bottom: 0;
-	background-color: #3b2314;
+	background-color: $brown;
 	color: white;
 }
 footer .logo {
@@ -15,7 +15,7 @@ footer .logo {
 }
 
 .postfooter {
-	background-color: #3b2314 !important;
+	background-color: $brown !important;
 	padding: 0 0 25px;
 }
 

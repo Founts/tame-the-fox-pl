@@ -332,14 +332,16 @@ div.wpcf7-mail-sent-ok {
   background: #e5e5e5 !important;
 }
 
-.main-content, .page {
-  background-color: #ececec;
+.main-content,
+.page,
+.single .single-featured {
+  background-color: #e5e5e5;
 }
 
 .page.page-template .post .entry-content,
 .page.page-template-default .post .entry-content,
 .post-type-archive-podcast.archive .main-content {
-  background-color: #ececec;
+  background-color: #e5e5e5;
 }
 
 @media screen and (max-width: 991px) {
@@ -353,6 +355,11 @@ div.wpcf7-mail-sent-ok {
 
 .page .post .entry-content {
   padding: 0;
+}
+
+.single .thst-main-posts {
+  padding: 80px 0;
+  background-color: #e5e5e5;
 }
 
 /* HEADER */
@@ -520,6 +527,15 @@ footer .credit {
   padding-top: 0 !important;
 }
 
+.single .caption-container {
+  background-color: #e5e5e5;
+  border-top: 1px solid #bbbbbb;
+}
+
+.single .content {
+  background-color: #e5e5e5;
+}
+
 /*.inside-container {
 	position: absolute; 
 	left: 0%; 
@@ -569,7 +585,7 @@ footer .credit {
   padding: 0 20px 20px;
   margin-top: 0px;
   overflow: hidden;
-  background: #fff;
+  background: white;
 }
 
 #mc_embed_signup .mc-field-group {
@@ -616,7 +632,7 @@ footer .credit {
 .page .reg .heading .title p,
 .reg .heading .title h1,
 .reg .heading .title p {
-  color: #ececec !important;
+  color: #e5e5e5 !important;
   text-shadow: 0px 4px 10px black;
 }
 .archive .reg .heading .title p,
@@ -682,7 +698,8 @@ footer .credit {
 
 .latest-episode .next-week .mini-title,
 .front-page-header .mini-title,
-.next-week .mini-title {
+.next-week .mini-title,
+.single .single-featured span.mini-title {
   color: #c74600;
 }
 
@@ -695,6 +712,11 @@ footer .credit {
 
 .schedule-message {
   color: white;
+}
+
+/* media player */
+.podcaster-theme .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  background-color: #c74600;
 }
 
 input[type=submit]:link, input[type=submit]:visited, #respond #commentform #submit:link, #respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited {

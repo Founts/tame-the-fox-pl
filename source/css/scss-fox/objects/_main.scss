@@ -6,17 +6,19 @@
 }
 
 .super-container {
-	background: #e5e5e5 !important;
+	background: $gray-light-4 !important;
 }
-.main-content, .page {
-	background-color: #ececec;
+.main-content, 
+.page,
+.single .single-featured {
+	background-color: $gray-light-4;
 }
 
 //overrides for podcaster theme
 .page.page-template .post .entry-content, 
 .page.page-template-default .post .entry-content,
 .post-type-archive-podcast.archive .main-content {
-	background-color: #ececec;
+	background-color: $gray-light-4;
 }
 .archive .main-content, 
 .page.page-template .main-content .page.post, 
@@ -29,4 +31,9 @@
 
 .page .post .entry-content {
     padding: 0;
+}
+
+.single .thst-main-posts {
+    padding: 80px 0;
+    background-color: $gray-light-4;
 }

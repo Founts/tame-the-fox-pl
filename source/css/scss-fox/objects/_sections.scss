@@ -15,3 +15,12 @@
 .list-of-episodes {
 	padding-top: 0 !important;
 }
+
+.single .caption-container {
+	background-color: $gray-light-4;
+	border-top: 1px solid $gray-light-3;
+}
+
+.single .content {
+	background-color: $gray-light-4;
+}
