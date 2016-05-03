@@ -465,6 +465,12 @@ footer .footer-widgets {
   color: white;
 }
 
+@media screen and (max-width: 480px) {
+  footer .footer-widgets .footer-inner {
+    padding-bottom: 6px;
+  }
+}
+
 footer .logo {
   display: block;
 }
@@ -502,6 +508,7 @@ footer .credit {
 \*------------------------------------*/
 .small-text {
   font-size: 1em;
+  line-height: 1 !important;
 }
 
 /*------------------------------------*\

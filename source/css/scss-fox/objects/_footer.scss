@@ -10,6 +10,11 @@ footer .footer-widgets {
 	background-color: $brown;
 	color: white;
 }
+footer .footer-widgets .footer-inner {
+	@media screen and (max-width: 480px) {
+		padding-bottom: 6px;	
+	}
+}
 footer .logo {
 	display: block;
 }
