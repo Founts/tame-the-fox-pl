@@ -1,0 +1,17 @@
+{
+	"headline" : {
+		"short" : "Episode Archive",
+		"medium" : ""
+	},
+	"episode-list" : [
+		{
+			"img": {
+				"square": {
+					"src": "../../images/sample/thumb-square-river.jpg",
+					"alt": "Post Thumbnail"	
+				}
+			},
+			"title" : "Top 10 Trails You Have To Hike Before You Die"
+		}
+	]
+}

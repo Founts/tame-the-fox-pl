@@ -17,6 +17,40 @@
 	line-height: 1.5em;
 }
 
+/* Block Thumbnail with Headline */
+.block-thumb {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+
+	.b-inner {
+		display: table-row;
+		vertical-align: top;
+  		overflow: hidden;
+	}
+
+	.b-thumb {
+		max-width: 600px; //to center text
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			border-radius: $border-radius;
+ 		}
+	}
+
+	.b-text {
+		max-width: 600px; //to center text
+		color: $text-link;
+	}
+	.b-title {
+		margin: 20px 0;
+		@media all and (max-width: $bp-med) {
+			margin: 10px 0 20px;
+		}
+	}
+}
+
 // PAGE HEADER
 .reg {
 	background: $red-fox-light;

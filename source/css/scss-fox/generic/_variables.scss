@@ -24,7 +24,10 @@ $error : #f00;
 $valid : $green;
 // $warning : #fff664;
 // $information : #000db5;
-
+$text-link : $red-fox;
+$text-link-hover : $red-fox;
+$text-link-lt : $white;
+$text-link-lt-hover : $white;
 
 //Typography
 $font : "calluna-sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
@@ -63,15 +66,24 @@ $pad-quarter :$pad/4;
 $border-radius: 4px;
 
 //Breakpoints
-// $bp-small : 24em;
+$bp-small : 768px;
 // $bp-small-2 : 29.75em;
 $bp-small-3 : 39.8em;
-// $bp-med : 46.8em;
+$bp-med : 992px;
 // $bp-med-2 : 48em;
-// $bp-large : 50em;
+$bp-large : 1200px;
 // $bp-large-2 : 66em;
 // $bp-xl : 73em;
 // $bp-xxl : 89em;
 // $bp-xxxl : 93em;
+//BOOTSTRAP BREAKPOINTS - FROM PODCASTER THEME
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+//@media (min-width: @screen-sm-min) { ... }
+/* Medium devices (desktops, 992px and up) */
+//@media (min-width: @screen-md-min) { ... }
+/* Large devices (large desktops, 1200px and up) */
+//@media (min-width: @screen-lg-min) { ... }
 
 //

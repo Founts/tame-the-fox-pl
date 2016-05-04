@@ -1,0 +1,20 @@
+{{>organisms-header-podcaster}}
+{{>molecules-block-page-header-image}}
+{{! begin theme generated tags }}
+<div class="main-content page">
+    <div class="container">
+        <div class="row">
+			<div class="col-lg-12">
+				<div class="page post">
+					<div class="entry-content">
+					{{! end theme generated tags }}
+						{{# episode-list }}
+						{{>organisms-episode-list-blocks}}
+						{{/ episode-list }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{>organisms-footer}}

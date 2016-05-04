@@ -5,6 +5,11 @@
 /*------------------------------------*\
     $VARIABLES
 \*------------------------------------*/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
 /*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
@@ -535,7 +540,15 @@ footer .credit {
 }
 
 .list-of-episodes {
-  padding-top: 0 !important;
+  padding: 0 !important;
+}
+.list-of-episodes .block {
+  background: #e5e5e5;
+  opacity: 1;
+}
+.list-of-episodes .b-inner {
+  background: #e5e5e5;
+  opacity: 1;
 }
 
 .single .caption-container {
@@ -563,6 +576,39 @@ footer .credit {
   color: #606060;
   font-size: 1.5em;
   line-height: 1.5em;
+}
+
+/* Block Thumbnail with Headline */
+.block-thumb {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+.block-thumb .b-inner {
+  display: table-row;
+  vertical-align: top;
+  overflow: hidden;
+}
+.block-thumb .b-thumb {
+  max-width: 600px;
+}
+.block-thumb .b-thumb img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.block-thumb .b-text {
+  max-width: 600px;
+  color: #c74600;
+}
+.block-thumb .b-title {
+  margin: 20px 0;
+}
+@media all and (max-width: 992px) {
+  .block-thumb .b-title {
+    margin: 10px 0 20px;
+  }
 }
 
 .reg {
