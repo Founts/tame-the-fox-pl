@@ -300,6 +300,17 @@ div.wpcf7-mail-sent-ok {
   opacity: 0;
 }
 
+.animate-grow {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.animate-grow:hover {
+  transform: scale(1.1);
+}
+
 .animate-move > .demo-shape {
   -webkit-transition: all 0.8s ease-in-out;
   -moz-transition: all 0.8s ease-in-out;

@@ -296,6 +296,16 @@ div.wpcf7-mail-sent-ok {
   opacity: 0;
 }
 
+.animate-grow {
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+.animate-grow:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .animate-move > .demo-shape {
   -webkit-transition: all 0.8s ease-in-out;
           transition: all 0.8s ease-in-out;
