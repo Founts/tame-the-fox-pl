@@ -540,7 +540,7 @@ footer .credit {
 }
 
 .list-of-episodes {
-  padding: 0 !important;
+  padding: 0 0 80px 0 !important;
 }
 .list-of-episodes .block {
   background: #e5e5e5;
