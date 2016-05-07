@@ -1,7 +1,60 @@
-input[type=submit]:link, input[type=submit]:visited, #respond #commentform #submit:link, #respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited {
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+.btn {
+	display: inline-block;
+	background: $red-fox;
+	color: $white !important;
+	line-height: 1;
+	font-weight: bold;
+	padding: $pad;
+	border: 0;
+	text-align: center;
+	border-radius: $border-radius;
+	
+	&:hover, &:focus {
+		//background: $gray;
+		color: $white;
+	}
+
+	&.disabled {
+		background: $gray-light-2;
+		color: $gray;
+	}
+}
+
+.btn-small {
+	padding: $pad-half;
+}
+
+.btn-large {
+	padding: $pad-half;
+	text-transform: uppercase;
+	background: $red-fox;
+	font-size: 1.4rem;
+	font-weight: normal;
+}
+.btn-cta {
+	background: $green-dark;
+}
+.text-btn {
+	font-style: italic;
+}
+
+input[type=submit]:link,
+input[type=submit]:visited,
+#respond #commentform #submit:link,
+#respond #commentform #submit:visited,
+a.butn:link,
+a.butn:visited,
+.butn:link,
+.butn:visited {
 	background: $red-fox;
 }
 
-.input[type="submit"]:link, input[type="submit"]:visited, #respond #commentform #submit:link, #respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited, input.secondary[type="submit"], #respond #cancel-comment-reply-link:link, #respond #cancel-comment-reply-link:visited, #comments .commentlist li .comment-body .reply a:link, #comments .commentlist li .comment-body .reply a:visited, #respond #commentform #submit, .wpcf7-form-control.wpcf7-submit, .fromtheblog.list article .post-content .cats a:link, .fromtheblog.list article .post-content .cats a:visited {
+.input[type="submit"]:link,
+input[type="submit"]:visited,
+#respond #commentform #submit:link,
+#respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited, input.secondary[type="submit"], #respond #cancel-comment-reply-link:link, #respond #cancel-comment-reply-link:visited, #comments .commentlist li .comment-body .reply a:link, #comments .commentlist li .comment-body .reply a:visited, #respond #commentform #submit, .wpcf7-form-control.wpcf7-submit, .fromtheblog.list article .post-content .cats a:link, .fromtheblog.list article .post-content .cats a:visited {
     color: $white;
 }

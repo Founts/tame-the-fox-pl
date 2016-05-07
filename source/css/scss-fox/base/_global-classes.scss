@@ -62,43 +62,29 @@
 }
 
 /* Display Classes */
-// .hide-small {
-//     @media all and (max-width: $bp-med) {
-//         display: none;
-//     }
-// }
+.hide-small {
+    @media all and (max-width: $bp-med) {
+        display: none;
+    }
+}
 
-// .hide-med {
-//     @media all and (min-width: $bp-med) and (max-width: $bp-large) {
-//         display: none;
-//     }
-// }
+.hide-med {
+    @media all and (min-width: $bp-med) and (max-width: $bp-large) {
+        display: none;
+    }
+}
 
-// .hide-large {
-//     @media all and (min-width: $bp-large) {
-//         display: none;
-//     }
-// }
+.hide-large {
+    @media all and (min-width: $bp-large) {
+        display: none;
+    }
+}
 
-// //States
-// .valid {
-// 	color: $valid;
-// }
+//States
+.valid {
+	color: $valid;
+}
 
-// .error {
-// 	color: $error;
-// }
-
-// .warning {
-//     color: $warning;
-// }
-
-// .information {
-//     color: $information;
-// }
-
-// .font-secondary {
-//     font-family: $font-secondary;
-// }
-
-
+.error {
+	color: $error;
+}

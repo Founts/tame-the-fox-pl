@@ -1,0 +1,46 @@
+//Page Header
+.page-header {
+	text-align: center;
+	padding: 110px 0;
+}
+.page-title {
+	margin: 0;
+	font-size: $font-size-large-2 ;
+	font-weight: 600;
+}
+.page-intro {
+	margin: $space-half 0 0;
+	font-size: $font-size-small-2;
+}
+// PAGE HEADER
+.reg {
+	background: $red-fox-light;
+}
+
+
+// *override podcaster*
+	// below overrides dynamic styles of theme
+.page .reg, 
+.podcast-archive .reg, 
+.search .reg, 
+.archive .reg {
+    background-color: $red-fox-light;
+}
+.archive .reg .heading, 
+.page .reg .heading,
+.reg .heading {
+	padding: 0;
+}
+.archive .reg .heading .title, 
+.page .reg .heading .title,
+.reg .heading .title {
+	@extend .page-header;
+
+	h1, p {
+		color: $gray-light-4 !important;
+		text-shadow: 0px 4px 10px $black;
+	}
+	p {
+		@extend .page-intro;	
+	}
+}

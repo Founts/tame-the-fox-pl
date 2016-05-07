@@ -52,6 +52,7 @@ button, input[type="submit"] {
 
 input[type="checkbox"],
 input[type="radio"] {
+	display: inline !important;
     width: auto;
     margin-right: 0.3em;
 }
@@ -94,14 +95,4 @@ input[type="search"]::-webkit-search-decoration {
 	input[type=submit] {
 		background-color: $green-dark !important;
 	}
-}
-div.wpcf7-response-output {
-	font-size: $font-size-small-2;
-	margin: 0 0 1em;
-}
-div.wpcf7-mail-sent-ok {
-	border: 1px solid $green;
-	background-color: $green-light;
-	padding: $pad-half;
-	text-align: center;
 }

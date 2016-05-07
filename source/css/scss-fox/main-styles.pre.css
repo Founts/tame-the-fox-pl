@@ -97,6 +97,32 @@
 }
 
 /* Display Classes */
+@media all and (max-width: 992px) {
+  .hide-small {
+    display: none;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  .hide-med {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .hide-large {
+    display: none;
+  }
+}
+
+.valid {
+  color: #35ba09;
+}
+
+.error {
+  color: red;
+}
+
 body {
   font-family: "calluna-sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -189,6 +215,30 @@ a:hover, a:focus, a:link:hover, a:link:focus, a:visited:hover, a:visited:focus {
 }
 
 /*------------------------------------*\
+    $MEDIA ELEMENTS
+\*------------------------------------*/
+/* Flexible Media */
+img, video, object {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  margin-bottom: 1em;
+}
+
+figure {
+  margin-bottom: 1em;
+}
+figure img {
+  margin-bottom: 0.5em;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+/*------------------------------------*\
     $FORMS
 \*------------------------------------*/
 form ol, form ul {
@@ -242,6 +292,7 @@ button, input[type="submit"] {
 
 input[type="checkbox"],
 input[type="radio"] {
+  display: inline !important;
   width: auto;
   margin-right: 0.3em;
 }
@@ -279,18 +330,6 @@ input[type="search"]::-webkit-search-decoration {
 .wpcf7-form button,
 .wpcf7-form input[type=submit] {
   background-color: #207105 !important;
-}
-
-div.wpcf7-response-output {
-  font-size: 1.143em;
-  margin: 0 0 1em;
-}
-
-div.wpcf7-mail-sent-ok {
-  border: 1px solid #35ba09;
-  background-color: #91de78;
-  padding: 0.5em;
-  text-align: center;
 }
 
 .animate-fade {
@@ -461,6 +500,27 @@ header .main-title a {
 }
 
 /*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+.navigation {
+  display: block;
+  float: right;
+  line-height: 30px;
+  z-index: 200;
+  position: relative;
+  width: auto;
+  color: white;
+  background: #c74600;
+}
+.navigation .thst-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-align: right;
+}
+
+/*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
 footer {
@@ -512,9 +572,60 @@ footer .credit {
   line-height: 1em;
 }
 
+.page-header, .archive .reg .heading .title,
+.page .reg .heading .title,
+.reg .heading .title {
+  text-align: center;
+  padding: 110px 0;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.page-intro, .archive .reg .heading .title p,
+.page .reg .heading .title p,
+.reg .heading .title p {
+  margin: 0.5em 0 0;
+  font-size: 1.143em;
+}
+
+.reg {
+  background: #ffb68f;
+}
+
+.page .reg,
+.podcast-archive .reg,
+.search .reg,
+.archive .reg {
+  background-color: #ffb68f;
+}
+
+.archive .reg .heading,
+.page .reg .heading,
+.reg .heading {
+  padding: 0;
+}
+
+.archive .reg .heading .title h1, .archive .reg .heading .title p,
+.page .reg .heading .title h1,
+.page .reg .heading .title p,
+.reg .heading .title h1,
+.reg .heading .title p {
+  color: #e5e5e5 !important;
+  text-shadow: 0px 4px 10px black;
+}
+
 /*------------------------------------*\
     $TEXT Styles
 \*------------------------------------*/
+.intro {
+  font-size: 1.2142em;
+  font-weight: bold;
+}
+
 .small-text {
   font-size: 1em;
   line-height: 1 !important;
@@ -611,26 +722,6 @@ footer .credit {
   }
 }
 
-.reg {
-  background: #ffb68f;
-}
-
-.heading {
-  padding: 50px 0;
-}
-.heading .title {
-  padding: 60px 0 60px;
-  color: #606060;
-}
-.heading .title h1 {
-  margin: 0;
-  font-size: 3em;
-  font-weight: 600;
-}
-.heading .title p {
-  margin: 1em 0 0;
-}
-
 /* MAIL CHIMP NEWSLETTER FORM BLOCK */
 #mc_embedbed-subscribe {
   display: inline-block;
@@ -682,28 +773,6 @@ footer .credit {
 #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error,
 #mce_inline_error {
   margin: 0 !important;
-}
-
-.archive .reg .heading .title h1, .archive .reg .heading .title p,
-.page .reg .heading .title h1,
-.page .reg .heading .title p,
-.reg .heading .title h1,
-.reg .heading .title p {
-  color: #e5e5e5 !important;
-  text-shadow: 0px 4px 10px black;
-}
-.archive .reg .heading .title p,
-.page .reg .heading .title p,
-.reg .heading .title p {
-  margin: .5em 0 0;
-  font-size: 16px;
-}
-
-.page .reg,
-.podcast-archive .reg,
-.search .reg,
-.archive .reg {
-  background-color: #ffb68f;
 }
 
 .block-person {
@@ -776,10 +845,88 @@ footer .credit {
   background-color: #c74600;
 }
 
-input[type=submit]:link, input[type=submit]:visited, #respond #commentform #submit:link, #respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited {
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+.btn {
+  display: inline-block;
+  background: #c74600;
+  color: white !important;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1em;
+  border: 0;
+  text-align: center;
+  border-radius: 4px;
+}
+.btn:hover, .btn:focus {
+  color: white;
+}
+.btn.disabled {
+  background: #dddddd;
+  color: #606060;
+}
+
+.btn-small {
+  padding: 0.5em;
+}
+
+.btn-large {
+  padding: 0.5em;
+  text-transform: uppercase;
+  background: #c74600;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.btn-cta {
+  background: #207105;
+}
+
+.text-btn {
+  font-style: italic;
+}
+
+input[type=submit]:link,
+input[type=submit]:visited,
+#respond #commentform #submit:link,
+#respond #commentform #submit:visited,
+a.butn:link,
+a.butn:visited,
+.butn:link,
+.butn:visited {
   background: #c74600;
 }
 
-.input[type="submit"]:link, input[type="submit"]:visited, #respond #commentform #submit:link, #respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited, input.secondary[type="submit"], #respond #cancel-comment-reply-link:link, #respond #cancel-comment-reply-link:visited, #comments .commentlist li .comment-body .reply a:link, #comments .commentlist li .comment-body .reply a:visited, #respond #commentform #submit, .wpcf7-form-control.wpcf7-submit, .fromtheblog.list article .post-content .cats a:link, .fromtheblog.list article .post-content .cats a:visited {
+.input[type="submit"]:link,
+input[type="submit"]:visited,
+#respond #commentform #submit:link,
+#respond #commentform #submit:visited, a.butn:link, a.butn:visited, .butn:link, .butn:visited, input.secondary[type="submit"], #respond #cancel-comment-reply-link:link, #respond #cancel-comment-reply-link:visited, #comments .commentlist li .comment-body .reply a:link, #comments .commentlist li .comment-body .reply a:visited, #respond #commentform #submit, .wpcf7-form-control.wpcf7-submit, .fromtheblog.list article .post-content .cats a:link, .fromtheblog.list article .post-content .cats a:visited {
   color: white;
+}
+
+/*------------------------------------*\
+    $MESSAGING
+\*------------------------------------*/
+.alert,
+div.wpcf7-response-output {
+  text-align: center;
+  padding: 0.5em;
+  margin: 0 0 1em;
+  border: 1px solid #606060;
+  border-radius: 4px;
+  background: #f9f9f9;
+  font-size: 1.143em;
+}
+
+.alert-error {
+  color: red;
+  border-color: red;
+  background: #ffbebe;
+}
+
+.alert-success,
+div.wpcf7-mail-sent-ok {
+  border: 1px solid #35ba09;
+  background-color: #91de78;
 }

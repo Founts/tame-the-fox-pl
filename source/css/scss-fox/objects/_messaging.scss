@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    $MESSAGING
+\*------------------------------------*/
+
+// Alerts
+.alert,
+div.wpcf7-response-output {
+	text-align: center;
+	padding: $pad-half;
+	margin: 0 0 $pad;
+	border: 1px solid $gray;
+	border-radius: $border-radius;
+	background: $gray-light;
+	font-size: $font-size-small-2;
+}
+
+.alert-error {
+	color: $error;
+	border-color: $error;
+	background: #ffbebe;
+}
+
+.alert-success,
+div.wpcf7-mail-sent-ok {
+	border: 1px solid $green;
+	background-color: $green-light;
+}

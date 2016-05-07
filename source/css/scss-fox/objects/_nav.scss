@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+// .navigation {
+// 	clear: both;
+// 	overflow: hidden;
+// 	max-height: 0;
+	
+// 	a {
+// 		display: block;
+// 		padding: $pad;
+// 		border-top: 1px solid $gray-light-2;
+// 	}
+
+// 	&.active {
+// 		max-height: 40em;
+// 	}
+
+// 	@media all and (min-width: $bp-med) {
+// 		max-height: none;
+// 		float: right;
+// 		clear: none;
+
+// 		li {
+// 			float: left;
+// 		}
+
+// 		a {
+// 			border: 0;
+// 		}
+		
+// 	}
+// }
+.navigation {
+	display: block;
+	float: right;
+	line-height: 30px;
+	z-index: 200;
+	position: relative;
+	width: auto;
+	color: $white;
+	background: $red-fox;
+
+	.thst-menu {
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+	    font-size: 16px;
+	    text-align: right;
+	}
+}

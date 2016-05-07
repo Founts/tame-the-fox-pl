@@ -19,11 +19,9 @@ $gray-dark : #333;
 $gray-dark-2 : #131313;
 $white : #fff;
 $black : #000;
-// $dim : rgba(0,0,0,0.5);
+$dim : rgba(0,0,0,0.5);
 $error : #f00;
 $valid : $green;
-// $warning : #fff664;
-// $information : #000db5;
 $text-link : $red-fox;
 $text-link-hover : $red-fox;
 $text-link-lt : $white;
@@ -31,14 +29,13 @@ $text-link-lt-hover : $white;
 
 //Typography
 $font : "calluna-sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-// $font-secondary : Georgia, Times, "Times New Roman", serif;
 
 // NOTE: bootstrap root font size is 14px
-$font-size-small : 1em;
-$font-size-small-2 : 1.143em; //16px
-$font-size-med : 1.5em; // normal text
+$font-size-small : 1em; // 14px
+$font-size-small-2 : 1.143em; // 16px
+$font-size-small-3: 1.2142em; // 17px
+$font-size-med : 1.5em; 
 //$font-size-med : 1.714em; //24px using root
-// $font-size-med-2: 1.0625em;
 // $font-size-large : 1.4375em;
 $font-size-large : 1.5em;
 $font-size-large-2 : 3em;
@@ -85,5 +82,3 @@ $bp-large : 1200px;
 //@media (min-width: @screen-md-min) { ... }
 /* Large devices (large desktops, 1200px and up) */
 //@media (min-width: @screen-lg-min) { ... }
-
-//
