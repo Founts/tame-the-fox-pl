@@ -728,6 +728,10 @@ footer .credit {
   }
 }
 
+.album-art img {
+  border-radius: 4px;
+}
+
 /* MAIL CHIMP NEWSLETTER FORM BLOCK */
 #mc_embedbed-subscribe {
   display: inline-block;
@@ -735,7 +739,7 @@ footer .credit {
 
 #mc_embed_signup {
   clear: left;
-  border-radius: 7px;
+  border-radius: 4px;
   padding: 0 20px 20px;
   margin-top: 0px;
   overflow: hidden;
@@ -833,6 +837,10 @@ footer .credit {
 .next-week .mini-title,
 .single .single-featured span.mini-title {
   color: #c74600;
+}
+
+.list-of-episodes article.list {
+  border-radius: 4px;
 }
 
 /* HERO */

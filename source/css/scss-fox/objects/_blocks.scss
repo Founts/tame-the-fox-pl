@@ -51,6 +51,12 @@
 	}
 }
 
+// Episode block
+.album-art img {
+	border-radius: $border-radius;
+}
+
+
 /* MAIL CHIMP NEWSLETTER FORM BLOCK */
 #mc_embedbed-subscribe {
 	display: inline-block;
@@ -58,7 +64,7 @@
 
 #mc_embed_signup {
 	clear: left;
-    border-radius: 7px;
+    border-radius: $border-radius;
     padding: 0 20px 20px;
     margin-top: 0px;
     overflow: hidden;
@@ -154,6 +160,11 @@
 .next-week .mini-title,
 .single .single-featured span.mini-title {
 	color: $red-fox;
+}
+
+// Episode List (mainly on home page)
+.list-of-episodes article.list {
+	border-radius: $border-radius;
 }
 
 /* HERO */
