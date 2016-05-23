@@ -11,10 +11,14 @@
 	background-color: $white;
 }
 .block p {
-	margin: 0;
+	margin: 0 0 .5em;
 	color: $text-body;
 	font-size: $font-size-large;
 	line-height: 1.5em;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 /* Block Thumbnail with Headline */

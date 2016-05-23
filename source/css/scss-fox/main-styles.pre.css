@@ -683,10 +683,13 @@ footer .credit {
 }
 
 .block p {
-  margin: 0;
+  margin: 0 0 .5em;
   color: #333333;
   font-size: 1.5em;
   line-height: 1.5em;
+}
+.block p:last-child {
+  margin-bottom: 0;
 }
 
 /* Block Thumbnail with Headline */
