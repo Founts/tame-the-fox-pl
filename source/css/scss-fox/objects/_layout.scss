@@ -9,3 +9,15 @@
  		}
 	}
 }
+
+// bootstrap + podcaster missing media queries. MQs are 1200, 992, 768
+@media all and (max-width: 768px) {
+	.col-xs-6 {
+		width: 50%;
+	}
+}
+@media all and (max-width: 380px) {
+	.col-xxs-12 {
+		width: 100%;
+	}
+}
