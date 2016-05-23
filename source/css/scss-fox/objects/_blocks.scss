@@ -12,7 +12,7 @@
 }
 .block p {
 	margin: 0;
-	color: $gray;
+	color: $text-body;
 	font-size: $font-size-large;
 	line-height: 1.5em;
 }
@@ -135,10 +135,10 @@
 .person-name {
 	//pulled from h2 article list
 	font-size: 30px;
-    font-weight: 100;
+    font-weight: 600;
     margin: 4px 0 8px 0;
     line-height: 1em;
-    color: $gray;
+    color: $text-heading;
 }
 .person-title {
 	//pulled from ul article list
@@ -152,7 +152,7 @@
 .person-desc {
 	font-size: $font-size-large;
 	line-height: 1.5em;
-	color: $gray-med;
+	color: $text-body;
 }
 
 .latest-episode .next-week .mini-title, 

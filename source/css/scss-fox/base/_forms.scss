@@ -21,7 +21,7 @@ label {
 	padding-bottom: 0;
 	margin-bottom: $space-half; //override
 	font-size: $font-size-med;
-	color: $gray;
+	color: $gray-53;
 }
 
 button, input, select, textarea {
@@ -32,7 +32,7 @@ button, input, select, textarea {
 
 input, textarea {
 	width: 100%;
-	border: 1px solid $gray-light-3;
+	border: 1px solid $border-color;
 	padding: $pad-half 0.65rem !important;
 	font-size: $font-size-med;
 }
@@ -40,7 +40,7 @@ input, textarea {
 input[type=text], input[type=search], input[type=url], input[type=number], input[type=email], textarea {
 	-webkit-appearance: none;
 	background-color: $white;
-	border: 1px solid $gray-light-3;
+	border: 1px solid $border-color;
 }
 
 button, input[type="submit"] {

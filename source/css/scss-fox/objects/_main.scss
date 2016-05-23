@@ -6,19 +6,19 @@
 }
 
 .super-container {
-	background: $gray-light-4 !important;
+	background: $body-color !important;
 }
 .main-content, 
 .page,
 .single .single-featured {
-	background-color: $gray-light-4;
+	background-color: $body-color;
 }
 
 //overrides for podcaster theme
 .page.page-template .post .entry-content, 
 .page.page-template-default .post .entry-content,
 .post-type-archive-podcast.archive .main-content {
-	background-color: $gray-light-4;
+	background-color: $body-color;
 }
 .archive .main-content, 
 .page.page-template .main-content .page.post, 
@@ -35,5 +35,5 @@
 
 .single .thst-main-posts {
     padding: 80px 0;
-    background-color: $gray-light-4;
+    background-color: $body-color;
 }

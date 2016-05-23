@@ -5,27 +5,31 @@
 //Colors
 $red-fox : #c74600;
 $red-fox-light : #ffb68f;
-$green-light : #91de78;
-$green : #35ba09;
-$green-dark : #207105;
+$green-light : #91de78; //green-lt green-15
+$green : #35ba09; //green-md green-40
+$green-dark : #207105; //green-dk green-80
 $brown : #3b2314;
-$gray : #606060;
-$gray-light : #f9f9f9;
-$gray-light-2 : #ddd;
-$gray-light-3 : #bbb;
-$gray-light-4 : #e5e5e5;
-$gray-med : #545454;
-$gray-dark : #333;
-$gray-dark-2 : #131313;
 $white : #fff;
+$gray-04 : #f5f5f5;
+$gray-20 : #ccc;
+$gray-33 : #aaa;
+$gray-53 : #777;
+$gray-80 : #333;
 $black : #000;
+
 $dim : rgba(0,0,0,0.5);
 $error : #f00;
 $valid : $green;
+
+$text-heading : $gray-80;
+$text-body : $gray-80;
 $text-link : $red-fox;
 $text-link-hover : $red-fox;
 $text-link-lt : $white;
 $text-link-lt-hover : $white;
+
+$body-color : $gray-04;
+$border-color : $gray-33;
 
 //Typography
 $font : "calluna-sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
