@@ -53,10 +53,10 @@
     padding: 0;
 }
 .content {
-	background-color: $body-color;
 
 	& article {
-		padding: $space-double;
+		padding: $space-double !important; //override podcaster
+		background: white;
 	}
 }
 

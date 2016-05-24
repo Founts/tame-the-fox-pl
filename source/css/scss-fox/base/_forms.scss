@@ -17,7 +17,11 @@ fieldset {
 }
 
 form p {
-	margin: 0 $space;
+	margin: 0 $space-double;
+
+	&:first-of-type {
+		padding-top: $space;
+	}
 }
 
 label {

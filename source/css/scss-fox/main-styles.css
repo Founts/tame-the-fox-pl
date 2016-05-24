@@ -127,7 +127,6 @@
 body {
   font-family: "calluna-sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   -webkit-text-size-adjust: 100%;
-  background: whitesmoke !important;
 }
 
 /* Text-Related Elements */
@@ -259,7 +258,10 @@ fieldset {
 }
 
 form p {
-  margin: 0 1em;
+  margin: 0 2em;
+}
+form p:first-of-type {
+  padding-top: 1em;
 }
 
 label {
@@ -430,6 +432,10 @@ input[type="search"]::-webkit-search-decoration {
 .single .thst-main-posts {
   padding: 80px 0;
   background-color: whitesmoke;
+}
+
+.thst-main-posts .content {
+  background: whitesmoke;
 }
 
 /* HEADER */
@@ -709,11 +715,9 @@ footer .credit {
   padding: 0;
 }
 
-.content {
-  background-color: whitesmoke;
-}
 .content article {
-  padding: 2em;
+  padding: 2em !important;
+  background: white;
 }
 
 #mediainfo .download {
