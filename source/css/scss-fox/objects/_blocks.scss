@@ -6,7 +6,7 @@
 .block {
 	padding: 1em;
 	//margin: 0 0 2.5em;
-	//box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+	box-shadow: $height-low;
 	border-radius: $border-radius;
 	background-color: $white;
 }
@@ -73,6 +73,7 @@
     margin-top: 0px;
     overflow: hidden;
     background: $white;
+    box-shadow: $height-low;
 }
 
 #mc_embed_signup .mc-field-group {
@@ -192,6 +193,9 @@
 /******************/
 /*  EPISODE ENTRY */
 /******************/
+article.post {
+	box-shadow: $height-low;
+}
 .post .featured-image .hover {
 
 	&:hover {

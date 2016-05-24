@@ -242,6 +242,10 @@ figcaption {
 /*------------------------------------*\
     $FORMS
 \*------------------------------------*/
+.entry-content form {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
 form ol, form ul {
   list-style: none;
   margin-left: 0;
@@ -254,7 +258,7 @@ fieldset {
 }
 
 form p {
-  margin: 0;
+  margin: 0 1em;
 }
 
 label {
@@ -322,7 +326,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 .g-recaptcha {
-  margin-bottom: 2em;
+  margin: 0 1em 2em;
 }
 
 /*------------------------------------*\
@@ -433,6 +437,7 @@ input[type="search"]::-webkit-search-decoration {
 .above.nav-sticky.header-scrolled,
 .above.nav-sticky.header-scrolled .open-menu {
   background-color: #3b2314 !important;
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 .above,
@@ -676,6 +681,7 @@ footer .credit {
 .list-of-episodes .block {
   background: whitesmoke;
   opacity: 1;
+  margin-bottom: 2em;
 }
 .list-of-episodes .b-inner {
   background: whitesmoke;
@@ -698,6 +704,7 @@ footer .credit {
 }*/
 .block {
   padding: 1em;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   background-color: white;
 }
@@ -761,6 +768,7 @@ footer .credit {
   margin-top: 0px;
   overflow: hidden;
   background: white;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 #mc_embed_signup .mc-field-group {
@@ -879,6 +887,10 @@ footer .credit {
 /******************/
 /*  EPISODE ENTRY */
 /******************/
+article.post {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
 .post .featured-image .hover:hover {
   opacity: 1;
 }

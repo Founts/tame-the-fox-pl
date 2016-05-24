@@ -67,6 +67,10 @@ $pad-quarter :$pad/4;
 // $border-thick: 7px;
 $border-radius: 4px;
 
+//Shadows
+$height-low : 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+$height-high : 0px 6px 20px 0px rgba(0, 0, 0, 0.75);
+
 //Breakpoints
 $bp-small : 768px;
 // $bp-small-2 : 29.75em;
