@@ -189,3 +189,65 @@
 	background-color: $red-fox;
 }
 
+/******************/
+/*  EPISODE ENTRY */
+/******************/
+.post .featured-image .hover {
+
+	&:hover {
+		opacity: 1;
+
+		a {
+			font-size: $font-size-large-2;
+			line-height: 1;
+		}
+	}
+
+	a {
+	    position: absolute;
+	    top: 50%;
+	    //height: 230px;
+	    //width: 263px;
+	    width: 100%;
+	    margin-top: -.5em;
+	    display: table-cell;
+	    text-align: center;
+	    vertical-align: middle;
+	    font-family: $font;
+	    font-size: $font-size-small;
+	    line-height: 1;
+	    transition: all .5s ease-out;
+	    @media screen and (min-width: 1200px) {
+	    	//height: 260px;
+	    	//width: 260px;
+	    }
+	}
+}
+
+/******************/
+/*  ARTICLE LIST  */
+/******************/
+// override podcaster
+
+article.list .featured-image {
+	@media screen and (min-width: 450px) {
+		height: auto !important;
+	    overflow: hidden !important;
+	    position: relative !important;
+	    border-radius: 0 !important;
+	    float: left !important;
+	    margin-right: 30px !important;
+	    max-width: 230px;
+	    max-height: 230px;
+	}
+	@media screen and (min-width: 1200px) {
+		max-width: 260px;
+	    max-height: 260px;
+	}
+}
+article.list .post-header h2 a:link {
+    color: $text-link !important;
+}
+article.list .post-header h2 a:visited {
+	color: $text-link-visited !important;
+}

@@ -663,6 +663,9 @@ footer .credit {
   background: whitesmoke !important;
   padding: 0 0 80px 0 !important;
 }
+.list-of-episodes article.list {
+  margin: 0 0 2em;
+}
 .list-of-episodes .block {
   background: whitesmoke;
   opacity: 1;
@@ -864,6 +867,61 @@ footer .credit {
 /* media player */
 .podcaster-theme .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
   background-color: #c74600;
+}
+
+/******************/
+/*  EPISODE ENTRY */
+/******************/
+.post .featured-image .hover:hover {
+  opacity: 1;
+}
+.post .featured-image .hover:hover a {
+  font-size: 3em;
+  line-height: 1;
+}
+.post .featured-image .hover a {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -.5em;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "calluna-sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1;
+  -webkit-transition: all .5s ease-out;
+          transition: all .5s ease-out;
+}
+
+/******************/
+/*  ARTICLE LIST  */
+/******************/
+@media screen and (min-width: 450px) {
+  article.list .featured-image {
+    height: auto !important;
+    overflow: hidden !important;
+    position: relative !important;
+    border-radius: 0 !important;
+    float: left !important;
+    margin-right: 30px !important;
+    max-width: 230px;
+    max-height: 230px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  article.list .featured-image {
+    max-width: 260px;
+    max-height: 260px;
+  }
+}
+
+article.list .post-header h2 a:link {
+  color: #c74600 !important;
+}
+
+article.list .post-header h2 a:visited {
+  color: #ffb68f !important;
 }
 
 /*------------------------------------*\
