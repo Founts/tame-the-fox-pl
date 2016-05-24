@@ -37,7 +37,56 @@
 	background-color: $body-color;
 	border-top: 1px solid $border-color;
 }
+// caption container
+.caption-container {
+    background-color: $body-color;
+    border-top: 1px solid $border-color;
+    padding: 32px;
+}
 
-.single .content {
+.post .entry-content {
+    padding: 0;
+}
+
+.post .entry-content {
+    margin: 0;
+    padding: 0;
+}
+.content {
 	background-color: $body-color;
+
+	& article {
+		padding: $space-double;
+	}
+}
+
+#mediainfo .download {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+	
+	& li .butn {
+	    display: inline;
+	    font-size: 12px;
+	    font-weight: 400;
+	    letter-spacing: 0.5px;
+	    margin-left: 10px;
+	    padding: 3px 8px;
+	    text-transform: uppercase;
+	}
+}
+.entry-categories {
+    margin: 32px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.post .entry-meta {
+    padding: 0;
+    margin-top: 24px;
+    border-color: $gray-20;
+}
+.singlep_pagi {
+    padding: 0;
 }
